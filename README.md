@@ -1,7 +1,3 @@
-Nice, Sree 👍 — here’s your final **README.md** with the live link added:
-
----
-
 # 🎮 Tic Tac Toe Game
 
 This project is developed as **Task 3 of SkillCraft Technology Internship Program**.
