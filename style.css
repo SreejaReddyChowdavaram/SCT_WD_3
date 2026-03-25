@@ -1,0 +1,127 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 20px;
+  width: 360px;          /* reduced width */
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+/* ===== MODE BUTTONS ===== */
+.mode-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.mode-select button {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #1e90ff, #00c6ff);
+  color: white;
+  transition: 0.3s;
+}
+
+.mode-select button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== STATUS ===== */
+#status {
+  font-size: 15px;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+/* ===== BOARD ===== */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+/* ===== CELLS ===== */
+.cell {
+  width: 90px;      /* smaller cells */
+  height: 90px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cell:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.06);
+}
+
+/* ===== X & O COLORS ===== */
+.cell.x {
+  color: #00c6ff;
+}
+
+.cell.o {
+  color: #ff4ecd;
+}
+
+/* ===== WIN ===== */
+.cell.win {
+  background: #00ffb3;
+  color: black;
+}
+
+/* ===== RESTART ===== */
+.restart {
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.restart:hover {
+  transform: scale(1.05);
+}
